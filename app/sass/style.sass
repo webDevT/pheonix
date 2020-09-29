@@ -1,0 +1,252 @@
+@import "vars"
+@import "fonts"
+
+body 
+	color: $black 
+	font-family: $open-sans
+.container-fluid 
+	width: 86.806vw
+	padding-left: 0
+	padding-right: 0
+h1 
+	font-size: 3.643vw
+	line-height: 4.444vw
+	font-family: $oswald
+h2 
+	font-size: 3.123vw
+	font-family: $oswald
+	font-weight: 700
+	text-align: center
+	text-transform: uppercase
+a:hover 
+	text-decoration: none
+.container-sm
+	width: 74.931vw
+	margin: 0 auto
+
+//start header style
+.header
+	padding-top: 3.019vw
+	padding-bottom: 5.954vw 
+	.container-fluid 
+		display: flex
+		align-items: center
+	h1 
+		padding-left: 7.911vw
+		max-width: 55vw
+.logo 
+	img 
+		width: 20.819vw
+//end header style
+
+//start about 
+.about 
+	padding-bottom: 5.694vw
+	.container-fluid 
+		display: flex
+.circle 
+	stroke: $black
+	transition: all 0.5s
+.icon-bg 
+	fill: $black
+	transition: all 0.5s
+.about-social__icons 
+	a:hover 
+		.icon-bg 
+			fill: #fff 
+		.circle
+			fill: $black
+.about__img
+	img 
+		width: 49.133vw
+		box-shadow: 0.625vw 0.625vw 1.822vw rgba(0, 0, 0, 0.25)
+		border-radius: 0.520vw
+.about__content
+	padding-left: 3.331vw
+.about__title
+	font-weight: 700
+	font-size: 1.874vw
+	line-height: 2.361vw
+	margin-bottom: 1.509vw
+.about__text
+	font-size: 1.041vw
+	line-height: 1.319vw
+	p 
+		margin-bottom: 0
+		margin-bottom: 1.736vw
+.about-social
+	padding-top: 0.694vw
+	a 
+		display: block
+.about-social__title
+	font-family: $oswald 
+	font-weight: 700
+	font-size: 1.041vw
+	margin-bottom: 0.319vw
+.about-social__icons
+	display: flex 
+	a 
+		margin-right: 2.639vw
+	svg 
+		width: 3.125vw
+
+//end about
+
+//start sponsors 
+.sponsors
+	margin-bottom: 5.139vw
+	.container-sm
+		padding-top: 3.264vw
+		padding-bottom: 5.139vw
+		border-top: 2px solid $blue
+		border-bottom: 2px solid $blue
+	h2 
+		margin-bottom: 2.986vw
+.sponsors__logos
+	display: flex 
+	justify-content: center
+	align-items: center
+	a
+		max-width: 30% 
+		margin: 0 5%
+		display: flex 
+		justify-content: center
+		img 
+			width: 100%
+	a:nth-child(2)
+		max-width: 50%
+//end sponsors
+
+
+//start news
+.news
+	h2 
+		margin-bottom: 4.167vw
+
+.news__item
+	display: flex 
+	margin-bottom: 2.778vw
+
+	img 
+		min-width: 36.597vw
+		width: 36.597vw
+		box-shadow: 0.625vw 0.625vw 1.822vw rgba(0, 0, 0, 0.25)
+		border-radius: 0.520vw
+	.news__item-content
+		position: relative
+.news__item-title
+	background: $orange
+	color: #fff
+	position: absolute
+	top: 0.729vw 
+	left: -3.403vw
+	width: 41.597vw
+	height: 3.643vw
+	text-transform: uppercase
+	display: flex 
+	align-items: center
+	font-size: 1.666vw
+	font-weight: 700
+	padding-left: 3.403vw
+	border-radius: 0.520vw
+	box-shadow: 0.104vw 0.104vw 0.416vw rgba(0, 0, 0, 0.5)
+.news__item-content
+	padding-top: 5.903vw
+	padding-left: 2.639vw
+.news__item-sub-title
+	font-weight: 700
+	font-size: 1.457vw
+	padding-bottom: 1.042vw
+.news__item-text
+	font-size: 0.937vw
+	max-width: 90%
+	p 
+		margin-bottom: 1.458vw
+//end news 
+
+//start tickets 
+.tickets
+	margin-bottom: 6.250vw
+	.container-sm 
+		border-top: 3px solid $blue
+		border-bottom: 3px solid $blue
+		padding-top: 3.681vw 
+		padding-bottom: 3.958vw
+.ticket__items
+	width: 100% 
+	justify-content: space-between 
+	display: flex
+.ticket-item
+	background: $blue 
+	color: #fff 
+	width: 17.431vw
+	height: 11.399vw
+	display: flex 
+	flex-direction: column 
+	justify-content: center 
+	align-items: center
+	margin-top: 3.125vw
+	box-shadow: 0.104vw 0.104vw 0.416vw rgba(68, 68, 68, 0.5)
+	border-radius: 0.520vw
+.ticket-text
+	font-size: 2.602vw
+	text-transform: uppercase
+	font-family: $oswald
+	font-weight: 700
+.ticket-value
+	font-size: 2.186vw
+	font-family: $oswald
+	font-weight: 500
+.cards
+	display: flex 
+	justify-content: center
+	align-items: center
+	padding-top: 2.847vw
+	a 
+		margin: 0 1.090vw
+		img 
+			width: 4.792vw
+.draw__items
+	display: flex
+	justify-content: space-between
+	margin-top: 2.083vw
+	padding-bottom: 3.194vw
+.draw-item
+	width: 18.056vw
+	p 
+		font-size: 1.249vw
+		font-weight: 400
+.draw-item-title
+	font-size: 1.457vw
+	font-weight: 700
+	margin-bottom: 2.222vw
+	text-transform: uppercase
+//start footer 
+.footer 
+	background: #D8D8D8
+	padding: 0.556vw 0
+	font-size: 0.833vw
+	font-weight: 700
+	a 
+		color: $black
+
+	img 
+		width: 5.465vw
+	.container-sm 
+		display: flex 
+		justify-content: space-between
+		align-items: center
+.footer__right,
+.footer__left 
+	display: flex 
+	align-items: center
+.copy 
+	margin-left: 1.458vw
+.footer__right
+	a 
+		margin-left: 6.458vw
+//end footer
+@import "media"
+
+
+
